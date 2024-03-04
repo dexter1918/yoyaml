@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoYaml</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.1/js-yaml.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="inputBox">
+            <h3>YAML Input</h3>
+            <textarea id="yamlInput"></textarea>
+        </div>
+
+        <button id="convertBtn" onclick="convertYaml()">Convert</button>
+
+        <div id="outputBox">
+            <h3>Converted Output</h3>
+            <textarea id="convertedOutput" readonly></textarea>
+        </div>
+    </div>
+</body>
+</html>
