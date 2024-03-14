@@ -9,9 +9,9 @@ function convertYaml() {
         let outputText = "";
         for (const [path, value] of Object.entries(resultDict)) {
             if (String(value).startsWith("![") && String(value).endsWith("]")) {
-                outputText += `\${secure::${path}}\nMule::p("secure::${path}")\n`;
+                outputText += `\${secure::${path}}\nMule::p("secure::${path}")\n\n`;
             } else {
-                outputText += `\${${path}}\nMule::p("${path}")\n`;
+                outputText += `\${${path}}\nMule::p("${path}")\n\n`;
             }
         }
 
